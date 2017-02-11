@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class CustomFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String fragments[] = {"Fragment 1", "Fragment 2"};
+    private String fragments[] = {"Solution 1", "Solution 2","Drag and drop"};
 
     public CustomFragmentPagerAdapter(FragmentManager supportFragmentManager) {
         super(supportFragmentManager);
@@ -20,6 +20,8 @@ public class CustomFragmentPagerAdapter extends FragmentPagerAdapter {
                 return new Fragment1();
             case 1:
                 return new Fragment2();
+            case 2:
+                return new Fragment3();
             default:
                 return null;
         }
